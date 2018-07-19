@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives | Self Juice</title>
+  <meta name="author" content="ilath">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Self Juice"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+  
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="canonical" href="http://yoursite.com/archives/index.html" />
+  <link rel="alternate" href="/atom.xml" title="Self Juice" type="application/atom+xml">
+  
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45991394-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="blog-header">
+  <h1><a href="/">Self Juice</a></h1>
+  <h2><a href="/">ilath&#39;s Proving Ground</a></h2>
+</div>
+<nav id="main-nav" class="blog-nav">
+  <ul>
+    
+      <li><a href="/">首页/Home</a></li>
+    
+      <li><a href="/archives">归档/Archives</a></li>
+    
+      <li><a href="/about">关于/About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    
+      <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">Archives</h2>
+<p></p>
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2018-07-19T14:05:30.878Z"><a href="/2018/07/19/CSS-TheDefinitiveGuide/">2018-07-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/07/19/CSS-TheDefinitiveGuide/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="候选样式表"><a href="#候选样式表" class="headerlink" title="候选样式表"></a>候选样式表</h3><p>  将rel属性的值置为alternate stylesheet，就可以定义候选样式表，只有在用户选择这个样式表时才会用于文档表现。如果为一个rel为styleesheet的link指定了title，也就指定了该样式表要作为首选样式表。如果没有为样式表指定title，那么它将作为一个永久样式表，始终作用于文档的显示。</p>
+<p>  <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;sheet.css&quot; title=&quot;Default&quot;/&gt;</code></p>
+<p>  <code>&lt;link rel=&quot;alternate stylesheet&quot; type=&quot;text/css&quot; href=&quot;sheet1.css&quot;/&gt;</code></p>
+<hr>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><h5 id="简单属性选择"><a href="#简单属性选择" class="headerlink" title="简单属性选择"></a>简单属性选择</h5><ul>
+<li><p>简单属性选择器</p>
+<p><code>h1[class] { color: sliver; }</code></p>
+</li>
+<li><p>元素属性选择器</p>
+<p> <code>img[alt] { border: 3px solid red; }</code></p>
+<p> <code>*[title] { font-weight: bold; }</code></p>
+<p> <code>a[href][title] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="根据具体属性值选择"><a href="#根据具体属性值选择" class="headerlink" title="根据具体属性值选择"></a>根据具体属性值选择</h5><ul>
+<li><p>根据属性及其值选择元素</p>
+<p><strong>这种格式要求必须与属性值完全匹配</strong></p>
+<p><code>a[href=&quot;http://www.example.org&quot;] { font-weight: bold; }</code></p>
+<p><code>a[href=&quot;http://www.example.org&quot;][title=&quot;example&quot;] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="根据部分属性值选择"><a href="#根据部分属性值选择" class="headerlink" title="根据部分属性值选择"></a>根据部分属性值选择</h5><ul>
+<li><p>根据部分属性值选择元素</p>
+<p>~ 根据属性值中出现的一个用空格分隔的词来完成选择</p>
+<p><code>p[class~=&quot;warning&quot;] { font-weight: bold; }</code></p>
+<p>这个选择器构造等价于点号类名记法。 <strong>p.warning</strong> 和 <strong>p[class~=”waring”]</strong> 是等价的。</p>
+</li>
+<li><p>子串匹配属性选择器</p>
+<ol>
+<li><p><strong>^</strong>  <code>[foo^=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值以“bar”开头的所有元素</p>
+</li>
+<li><p><strong>$</strong>  <code>[foo$=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值以“bar”结尾的所有元素</p>
+</li>
+<li><p><strong>*</strong>  <code>[foo*=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值中包含子串“bar”的所有元素</p>
+</li>
+</ol>
+<p>其他用法示例：</p>
+<p>根据属性的值悬着元素</p>
+<p><code>a[href*=&quot;oreilly.com&quot;] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="特定属性选择类型"><a href="#特定属性选择类型" class="headerlink" title="特定属性选择类型"></a>特定属性选择类型</h5><ul>
+<li><p><code>[att|=&quot;val&quot;]</code></p>
+<p>这个规则会选择 att 属性等于val或者以 val- 开头的所有元素。</p>
+</li>
+</ul>
+<hr>
+<h5 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h5><ul>
+<li><p>选择子元素</p>
+<p><strong>&gt;</strong>  子结合符</p>
+<p><code>h1 &gt; strong { color: red; }</code></p>
+<p>这个规则会把<strong>第一个</strong>h1下面出现的strong元素变成红色，但是<strong>第二个</strong>h1下出现的strong元素<strong>不会受影响</strong>。</p>
+</li>
+<li><p>选择相邻兄弟元素</p>
+<p><strong>+</strong> 相邻兄弟结合符</p>
+<p><code>h1 + p { margin-top: 0; }</code></p>
+<p>用一个结合符只能选择两个相邻兄弟中的第二个元素。另外，两个元素之间的文本内容不会影响相邻兄弟结合符起作用。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+            
+        
+                
+      
+
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+
+
+</div></div>
+      <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+</aside>
+    
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="aligncenter">
+  
+  &copy; 2018 ilath
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+
+<div id="scroll2top">
+<img src="/scroll2top/arrow.png"/>
+</div>
+<script src="/scroll2top/scroll2top.min.js"></script>
+<div id="winterland">
+  <canvas></canvas>
+</div>
+<script src="/js/winterland.min.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script src="https://www.zybuluo.com/static/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script>
+
+
+  
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59a3e3079f1b7ad5"></script> 
+  
+
+</body>
+</html>
