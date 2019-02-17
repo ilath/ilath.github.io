@@ -140,7 +140,69 @@
     </header>
     <div class="entry">
       
-        The article has been encrypted, please enter your password to view.<br>
+        <h3 id="候选样式表"><a href="#候选样式表" class="headerlink" title="候选样式表"></a>候选样式表</h3><p>  将rel属性的值置为alternate stylesheet，就可以定义候选样式表，只有在用户选择这个样式表时才会用于文档表现。如果为一个rel为styleesheet的link指定了title，也就指定了该样式表要作为首选样式表。如果没有为样式表指定title，那么它将作为一个永久样式表，始终作用于文档的显示。</p>
+<p>  <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;sheet.css&quot; title=&quot;Default&quot;/&gt;</code></p>
+<p>  <code>&lt;link rel=&quot;alternate stylesheet&quot; type=&quot;text/css&quot; href=&quot;sheet1.css&quot;/&gt;</code></p>
+<hr>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><h5 id="简单属性选择"><a href="#简单属性选择" class="headerlink" title="简单属性选择"></a>简单属性选择</h5><ul>
+<li><p>简单属性选择器</p>
+<p><code>h1[class] { color: sliver; }</code></p>
+</li>
+<li><p>元素属性选择器</p>
+<p> <code>img[alt] { border: 3px solid red; }</code></p>
+<p> <code>*[title] { font-weight: bold; }</code></p>
+<p> <code>a[href][title] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="根据具体属性值选择"><a href="#根据具体属性值选择" class="headerlink" title="根据具体属性值选择"></a>根据具体属性值选择</h5><ul>
+<li><p>根据属性及其值选择元素</p>
+<p><strong>这种格式要求必须与属性值完全匹配</strong></p>
+<p><code>a[href=&quot;http://www.example.org&quot;] { font-weight: bold; }</code></p>
+<p><code>a[href=&quot;http://www.example.org&quot;][title=&quot;example&quot;] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="根据部分属性值选择"><a href="#根据部分属性值选择" class="headerlink" title="根据部分属性值选择"></a>根据部分属性值选择</h5><ul>
+<li><p>根据部分属性值选择元素</p>
+<p>~ 根据属性值中出现的一个用空格分隔的词来完成选择</p>
+<p><code>p[class~=&quot;warning&quot;] { font-weight: bold; }</code></p>
+<p>这个选择器构造等价于点号类名记法。 <strong>p.warning</strong> 和 <strong>p[class~=”waring”]</strong> 是等价的。</p>
+</li>
+<li><p>子串匹配属性选择器</p>
+<ol>
+<li><p><strong>^</strong>  <code>[foo^=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值以“bar”开头的所有元素</p>
+</li>
+<li><p><strong>$</strong>  <code>[foo$=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值以“bar”结尾的所有元素</p>
+</li>
+<li><p><strong>*</strong>  <code>[foo*=&quot;bar&quot;]</code></p>
+<p> 选择foo属性值中包含子串“bar”的所有元素</p>
+</li>
+</ol>
+<p>其他用法示例：</p>
+<p>根据属性的值悬着元素</p>
+<p><code>a[href*=&quot;oreilly.com&quot;] { font-weight: bold; }</code></p>
+</li>
+</ul>
+<h5 id="特定属性选择类型"><a href="#特定属性选择类型" class="headerlink" title="特定属性选择类型"></a>特定属性选择类型</h5><ul>
+<li><p><code>[att|=&quot;val&quot;]</code></p>
+<p>这个规则会选择 att 属性等于val或者以 val- 开头的所有元素。</p>
+</li>
+</ul>
+<hr>
+<h5 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h5><ul>
+<li><p>选择子元素</p>
+<p><strong>&gt;</strong>  子结合符</p>
+<p><code>h1 &gt; strong { color: red; }</code></p>
+<p>这个规则会把<strong>第一个</strong>h1下面出现的strong元素变成红色，但是<strong>第二个</strong>h1下出现的strong元素<strong>不会受影响</strong>。</p>
+</li>
+<li><p>选择相邻兄弟元素</p>
+<p><strong>+</strong> 相邻兄弟结合符</p>
+<p><code>h1 + p { margin-top: 0; }</code></p>
+<p>用一个结合符只能选择两个相邻兄弟中的第二个元素。另外，两个元素之间的文本内容不会影响相邻兄弟结合符起作用。</p>
+</li>
+</ul>
+
       
     </div>
     <footer>
@@ -151,10 +213,6 @@
     <a href="/tags/CSS/">CSS</a>
   </div>
 
-        
-          <div style="text-align:center;">
-            <a href="/2018/07/19/CSS-TheDefinitiveGuide/#more" class="more-link">阅读全文 / READ MORE</a>
-          </div>
                 
       
 
