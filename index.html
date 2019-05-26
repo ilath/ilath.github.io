@@ -78,17 +78,85 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2019-02-17T15:48:14.000Z"><a href="/2019/02/17/2018-s-personal-summary/">2019-02-17</a></time>
+        <time datetime="2019-05-20T16:07:36.000Z"><a href="/2019/05/21/编写可读代码的艺术/">2019-05-21</a></time>
       
       
   
-    <h1 class="title"><a href="/2019/02/17/2018-s-personal-summary/">2018&#39;s personal summary</a></h1>
+    <h1 class="title"><a href="/2019/05/21/编写可读代码的艺术/">编写可读代码的艺术</a></h1>
   
 
     </header>
     <div class="entry">
       
-        The article has been encrypted, please enter your password to view.<br>
+        <p>代码应当易于理解<br>=</p>
+<pre><code>1. 代码应当易于理解
+2. 代码的写法应当使别人理解它所需的时间最小化
+3. 尽管减少代码行数是一个好目标，但把理解代码所需的时间最小化是一个更好的目标
+4. 要经常地想一想其他人是不是会觉得你的代码容易理解
+</code></pre><hr>
+<p>第一部分 表面层次的改进<br>-</p>
+<pre><code>1. 选择好的名字
+2. 写好的注释
+3. 把代码整洁地写成更好的格式
+</code></pre><hr>
+<p>把信息装到名字里<br>-<br>    把信息塞入名字中。这句话的含义是，读者仅通过读到名字就可以获得大量信息。</p>
+<ul>
+<li>使用专业的单词<blockquote>
+<ol>
+<li>选择非常专业的词，并且避免使用“空洞”的词</li>
+<li>找到更有表现力的词，例如：<blockquote>
+<p>  | 单词 | 更多选择 |<br>  | —- | ——- |<br>  | send    | deliver, dispatch, announce, distribute, route |<br>  | find    | search, extract, locate, recover |<br>  | start   | launch, create, begin, open |<br>  | make    | create, set up, bulid, generate, compose, add, new |</p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>避免空泛的名字</p>
+<blockquote>
+<ol>
+<li>好的名字应当描述变量的目的或者它所承载的值</li>
+<li>类似tmp这种名字只应用于短期存在且临时性为其主要存在因素的变量</li>
+</ol>
+</blockquote>
+</li>
+<li><p>使用具体的名字来更细致地描述失误</p>
+<blockquote>
+<p>在给变量、函数或者其他元素命名时，要把它描述得更具体而不是更抽象</p>
+</blockquote>
+</li>
+<li><p>给变量名带上重要的细节</p>
+<blockquote>
+<ol>
+<li>为名字附带更多信息。如果关于一个变量有什么重要事情的读者必须知道，那么是值得把额外的“词”添加到名字中的</li>
+<li>带单位的值。如果你的变量是一个度量的话，那么最好把名字带上它的单位<blockquote>
+<p>| 函数参数 | 带单位的参数 |<br>| ——  | —— |<br>| start(int delay) | delay -&gt; delay_secs |<br>| CreateCache(int size) | size -&gt; size_mb |<br>| ThrottleDowload(float limit) | limit -&gt; max_kbps |<br>| Rotate(float angle) | angle -&gt; degrees_cw |</p>
+</blockquote>
+</li>
+<li>附带其他的重要属性。</li>
+</ol>
+</blockquote>
+</li>
+<li><p>决定名字的长度</p>
+<blockquote>
+<ol>
+<li>在小的作用域里可以使用短的名字</li>
+<li>“不好输入”不再是避免使用长名字的理由，要活用编辑器的“单词补全”</li>
+<li>首字母缩略词和缩写。 原则：团队成员要能理解缩写的含义</li>
+<li>丢掉没用的词。有时名字中的某些单词可以拿掉而不会损失任何信息，这种时候可以把这些单词去掉</li>
+</ol>
+</blockquote>
+</li>
+<li><p>利用名字的格式来表达含义</p>
+<blockquote>
+<ol>
+<li>对于下划线、连字符和大小写的使用方式也可以把更多信息装到名字中</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+
       
     </div>
     <footer>
@@ -96,13 +164,57 @@
         
   
   <div class="tags">
-    <a href="/tags/private/">private</a>
+    <a href="/tags/code/">code</a>
   </div>
 
+                
+      
+
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-05-16T13:28:15.000Z"><a href="/2019/05/16/JavaScript语言精粹/">2019-05-16</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/05/16/JavaScript语言精粹/">JavaScript语言精粹</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
         
-          <div style="text-align:center;">
-            <a href="/2019/02/17/2018-s-personal-summary/#more" class="more-link">阅读全文 / READ MORE</a>
-          </div>
+      
+    </div>
+    <footer>
+            
+        
+  
+  <div class="tags">
+    <a href="/tags/JavaScript/">JavaScript</a>
+  </div>
+
                 
       
 
@@ -243,7 +355,9 @@
   
     <li><a href="/tags/CSS/">CSS</a><small>1</small></li>
   
-    <li><a href="/tags/private/">private</a><small>1</small></li>
+    <li><a href="/tags/JavaScript/">JavaScript</a><small>1</small></li>
+  
+    <li><a href="/tags/code/">code</a><small>1</small></li>
   
   </ul>
 </div>
